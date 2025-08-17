@@ -1,0 +1,31 @@
+{
+  "name": "@t8/event-patterns",
+  "version": "0.1.0",
+  "description": "Lightweight event manager with flexible event type matching",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "npx npm-run-all cleanup compile",
+    "cleanup": "node -e \"require('node:fs').rmSync('dist', {force: true, recursive: true});\"",
+    "compile": "npx npm-run-all compile:src compile:tests",
+    "compile:src": "npx esbuild index.ts --bundle --outdir=dist --platform=neutral",
+    "compile:tests": "npx esbuild tests.ts --bundle --outdir=dist --platform=neutral",
+    "prepublishOnly": "npx npm-run-all build test",
+    "preversion": "npx npm-run-all build test",
+    "test": "node dist/tests.js"
+  },
+  "author": "axtk",
+  "license": "ISC",
+  "keywords": [
+    "events",
+    "event-manager",
+    "event-emitter",
+    "dispatcher",
+    "mediator",
+    "regexp"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/t8dev/event-patterns.git"
+  }
+}

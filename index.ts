@@ -1,2 +1,2 @@
-export * from './src/EventManager';
+export * from './src/EventEmitter';
 export * from './src/matchPattern';

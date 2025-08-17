@@ -4,6 +4,8 @@
 
 *Lightweight zero-dependency event emitter with flexible event type matching*
 
+Installation: `npm i @t8/event-patterns`
+
 ## Usage
 
 Initialization:

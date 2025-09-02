@@ -11,8 +11,9 @@
     "compile:src": "npx esbuild index.ts --bundle --outdir=dist --platform=neutral",
     "compile:tests": "npx esbuild tests.ts --bundle --outdir=dist --platform=neutral",
     "prepublishOnly": "npx npm-run-all build test",
-    "preversion": "npx npm-run-all build test",
-    "test": "node dist/tests.js"
+    "preversion": "npx npm-run-all typecheck build test",
+    "test": "node dist/tests.js",
+    "typecheck": "tsc --noEmit"
   },
   "author": "axtk",
   "license": "ISC",
@@ -27,5 +28,8 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/t8js/event-patterns.git"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.2"
   }
 }

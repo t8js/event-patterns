@@ -1,4 +1,4 @@
-import { type MatchParams, matchPattern } from "./matchPattern";
+import { type MatchParams, matchPattern } from "./matchPattern.ts";
 
 export type EventType = string | number | boolean | RegExp | null | undefined;
 export type EventHandler = (event: Event) => void;

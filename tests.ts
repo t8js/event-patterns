@@ -3,7 +3,7 @@ import {
   EventEmitter,
   type EventListener,
   type MatchParams,
-} from ".";
+} from "./index.ts";
 
 let eventEmitter = new EventEmitter();
 let x = 0;

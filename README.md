@@ -1,8 +1,8 @@
-[![npm](https://img.shields.io/npm/v/@t8/event-patterns?labelColor=royalblue&color=royalblue&style=flat-square)](https://www.npmjs.com/package/@t8/event-patterns) ![browser](https://img.shields.io/badge/browser-✓-345?labelColor=345&color=345&style=flat-square) ![node](https://img.shields.io/badge/node-✓-345?labelColor=345&color=345&style=flat-square) ![TypeScript](https://img.shields.io/badge/TypeScript-✓-345?labelColor=345&color=345&style=flat-square)
-
-# @t8/event-patterns
+# T8 Event Patterns
 
 *Lightweight zero-dependency event emitter with flexible event type matching*
+
+[![npm](https://img.shields.io/npm/v/@t8/event-patterns?labelColor=345&color=46e)](https://www.npmjs.com/package/@t8/event-patterns) ![Lightweight](https://img.shields.io/bundlephobia/minzip/@t8/event-patterns?label=minzip&labelColor=345&color=46e)
 
 Installation: `npm i @t8/event-patterns`
 

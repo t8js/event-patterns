@@ -1,17 +1,17 @@
-# T8 Event Patterns
+# T8 Events
 
 *Lightweight zero-dependency event emitter with flexible event type matching*
 
-[![npm](https://img.shields.io/npm/v/@t8/event-patterns?labelColor=345&color=46e)](https://www.npmjs.com/package/@t8/event-patterns) ![Lightweight](https://img.shields.io/bundlephobia/minzip/@t8/event-patterns?label=minzip&labelColor=345&color=46e)
+[![npm](https://img.shields.io/npm/v/@t8/events?labelColor=345&color=46e)](https://www.npmjs.com/package/@t8/events) ![Lightweight](https://img.shields.io/bundlephobia/minzip/@t8/events?label=minzip&labelColor=345&color=46e)
 
-Installation: `npm i @t8/event-patterns`
+Installation: `npm i @t8/events`
 
 ## Usage
 
 Initialization:
 
 ```js
-import { EventEmitter } from "@t8/event-patterns";
+import { EventEmitter } from "@t8/events";
 
 let eventEmitter = new EventEmitter();
 ```

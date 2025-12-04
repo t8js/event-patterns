@@ -12,10 +12,9 @@
     "compile:src": "npx esbuild index.ts --bundle --outdir=dist --platform=neutral",
     "compile:tests": "npx esbuild tests.ts --bundle --outdir=dist --platform=neutral",
     "prepublishOnly": "npx npm-run-all build test",
-    "preversion": "npx npm-run-all typecheck shape build test",
-    "shape": "npx codeshape",
+    "preversion": "npx npm-run-all shape build test",
+    "shape": "npx codeshape --typecheck",
     "test": "node dist/tests.js",
-    "typecheck": "tsc --noEmit",
     "types": "tsc --emitDeclarationOnly"
   },
   "author": "axtk",
